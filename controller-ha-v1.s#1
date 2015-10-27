@@ -24612,7 +24612,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.3048" drill="0.508">
+<clearance class="0" value="0.254"/>
 </class>
 <class number="1" name="power" width="0.3048" drill="0.6">
 <clearance class="1" value="0.254"/>
@@ -26536,14 +26537,14 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="R1-1K1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="N$7" class="3">
 <segment>
 <wire x1="30.48" y1="190.5" x2="45.72" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="ACDC" gate="G$1" pin="AC_IN$1"/>
 <pinref part="AC_IN" gate="G$1" pin="KL"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="N$17" class="3">
 <segment>
 <wire x1="30.48" y1="180.34" x2="38.1" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="180.34" x2="38.1" y2="185.42" width="0.1524" layer="91"/>
