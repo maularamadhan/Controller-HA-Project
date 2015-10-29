@@ -24738,6 +24738,41 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+09V">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+9V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+9V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+09V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -24747,7 +24782,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="power" width="0.3048" drill="0.6">
-<clearance class="1" value="0.254"/>
+<clearance class="1" value="0.8128"/>
 </class>
 <class number="2" name="GND" width="0.3048" drill="0.6">
 <clearance class="2" value="0.508"/>
@@ -24995,11 +25030,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="GND64" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="bontor" deviceset="DCDCMODULE" device=""/>
 <part name="GND65" library="supply1" deviceset="GND" device=""/>
-<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND66" library="supply1" deviceset="GND" device=""/>
-<part name="P+59" library="SparkFun" deviceset="VCC" device=""/>
 <part name="CN1" library="adafruit" deviceset="DCBARREL" device="PTH"/>
-<part name="P+60" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND67" library="supply1" deviceset="GND" device=""/>
 <part name="C9-100N1" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="C9-100N2" library="rcl" deviceset="C-EU" device="C0603"/>
@@ -25027,7 +25059,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="C9-100N24" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="C9-100N25" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="C9-100N26" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="U2" library="SparkFun-Boards" deviceset="ARDUINO-MEGA" device="PRO-5V"/>
+<part name="P+61" library="SparkFun" deviceset="VCC" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="+9V" device=""/>
+<part name="SUPPLY3" library="supply2" deviceset="+9V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25298,12 +25332,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="GND64" gate="1" x="642.62" y="396.24"/>
 <instance part="U$1" gate="G$1" x="497.84" y="114.3"/>
 <instance part="GND65" gate="1" x="548.64" y="104.14"/>
-<instance part="+3V5" gate="G$1" x="548.64" y="127"/>
 <instance part="GND66" gate="1" x="457.2" y="104.14"/>
-<instance part="P+59" gate="1" x="457.2" y="124.46"/>
-<instance part="CN1" gate="G$1" x="568.96" y="114.3" rot="MR0"/>
-<instance part="P+60" gate="1" x="561.34" y="116.84"/>
-<instance part="GND67" gate="1" x="561.34" y="109.22"/>
+<instance part="CN1" gate="G$1" x="480.06" y="86.36" rot="MR0"/>
+<instance part="GND67" gate="1" x="472.44" y="81.28"/>
 <instance part="C9-100N1" gate="G$1" x="20.32" y="215.9" rot="R270"/>
 <instance part="C9-100N2" gate="G$1" x="63.5" y="215.9" rot="R270"/>
 <instance part="C9-100N3" gate="G$1" x="114.3" y="215.9" rot="R270"/>
@@ -25330,7 +25361,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="C9-100N24" gate="G$1" x="530.86" y="393.7" rot="R270"/>
 <instance part="C9-100N25" gate="G$1" x="581.66" y="393.7" rot="R270"/>
 <instance part="C9-100N26" gate="G$1" x="632.46" y="393.7" rot="R270"/>
-<instance part="U2" gate="G$1" x="469.9" y="35.56"/>
+<instance part="P+61" gate="1" x="548.64" y="121.92"/>
+<instance part="SUPPLY1" gate="G$1" x="457.2" y="127"/>
+<instance part="SUPPLY3" gate="G$1" x="472.44" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -25853,12 +25886,12 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="CN1" gate="G$1" pin="GND"/>
-<wire x1="566.42" y1="111.76" x2="561.34" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="83.82" x2="472.44" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND67" gate="1" pin="GND"/>
 <pinref part="CN1" gate="G$1" pin="GNDBREAK"/>
-<wire x1="566.42" y1="114.3" x2="561.34" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="561.34" y1="114.3" x2="561.34" y2="111.76" width="0.1524" layer="91"/>
-<junction x="561.34" y="111.76"/>
+<wire x1="477.52" y1="86.36" x2="472.44" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="86.36" x2="472.44" y2="83.82" width="0.1524" layer="91"/>
+<junction x="472.44" y="83.82"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -25907,12 +25940,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="U$4" gate="G$1" pin="CHPD"/>
 <wire x1="299.72" y1="167.64" x2="302.26" y2="167.64" width="0.1524" layer="91"/>
 <label x="302.26" y="167.64" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VOUT"/>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="533.4" y1="121.92" x2="548.64" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="548.64" y1="121.92" x2="548.64" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USIM_CLK" class="0">
@@ -26199,7 +26226,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <label x="60.96" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <pinref part="P+3" gate="1" pin="VCC"/>
@@ -26668,15 +26695,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <junction x="622.3" y="401.32"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VIN"/>
-<wire x1="462.28" y1="121.92" x2="457.2" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="124.46" x2="457.2" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="P+59" gate="1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="CN1" gate="G$1" pin="PWR"/>
-<wire x1="566.42" y1="116.84" x2="561.34" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="P+60" gate="1" pin="VCC"/>
+<pinref part="U$1" gate="G$1" pin="VOUT"/>
+<wire x1="533.4" y1="121.92" x2="548.64" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="P+61" gate="1" pin="VCC"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -30591,6 +30612,19 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="ACDC" gate="G$1" pin="AC_IN$1"/>
 <pinref part="AC_IN" gate="G$3" pin="KL"/>
 <wire x1="43.18" y1="177.8" x2="27.94" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+9V" class="2">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VIN"/>
+<wire x1="462.28" y1="121.92" x2="457.2" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="124.46" x2="457.2" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="G$1" pin="+9V"/>
+</segment>
+<segment>
+<pinref part="CN1" gate="G$1" pin="PWR"/>
+<wire x1="477.52" y1="88.9" x2="472.44" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="G$1" pin="+9V"/>
 </segment>
 </net>
 </nets>
