@@ -175,6 +175,7 @@
 <wire x1="188.9" y1="0" x2="0" y2="0" width="0" layer="20"/>
 <dimension x1="-0.1" y1="169.5" x2="187.8" y2="169.5" x3="93.85" y3="173" textsize="1.6764" layer="21"/>
 <dimension x1="0" y1="0" x2="-0.1" y2="169.5" x3="-5" y3="84.75" textsize="1.6764" layer="21" dtype="vertical"/>
+<text x="178.7" y="139.4" size="2.1844" layer="1" font="fixed" rot="R90">Tritronik</text>
 </plain>
 <libraries>
 <library name="SparkFun-Boards">
@@ -4977,8 +4978,8 @@ design rules under a new name.</description>
 <wire x1="173.85" y1="56.55" x2="173.85" y2="56.53" width="1.27" layer="1"/>
 <contactref element="U$1" pad="VOUT"/>
 <wire x1="74.2" y1="102" x2="74.19" y2="101.99" width="0" layer="19" extent="16-16"/>
-<wire x1="121.6" y1="102.1" x2="121.57" y2="102.07" width="0" layer="19" extent="16-16"/>
 <wire x1="97.5" y1="102.1" x2="97.48" y2="102.12" width="0" layer="19" extent="16-16"/>
+<wire x1="121.6" y1="102.1" x2="121.57" y2="102.07" width="0" layer="19" extent="16-16"/>
 <wire x1="146.3" y1="102.3" x2="146.22" y2="102.28" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCL">
@@ -9644,6 +9645,20 @@ design rules under a new name.</description>
 <wire x1="151.7" y1="40.5" x2="151.7" y2="48.34" width="1.6764" layer="1"/>
 <contactref element="CN1" pad="PWR"/>
 <wire x1="177.72" y1="37.88" x2="177.72" y2="17.79" width="1.6764" layer="1"/>
+</signal>
+<signal name="TRI">
+<wire x1="175.1" y1="137.7" x2="173.3" y2="135.8" width="0.254" layer="1"/>
+<wire x1="173.3" y1="135.8" x2="174.5" y2="132.9" width="0.254" layer="1"/>
+<wire x1="174.5" y1="132.9" x2="185.6" y2="135.3" width="0.254" layer="1"/>
+<wire x1="185.6" y1="135.3" x2="173.5" y2="135.8" width="0.254" layer="1"/>
+<polygon width="0.254" layer="1">
+<vertex x="173.3" y="135.8"/>
+<vertex x="174.5" y="132.9"/>
+<vertex x="185.6" y="135.3"/>
+</polygon>
+<wire x1="179.7" y1="131.2" x2="177.9" y2="133" width="0.254" layer="1" curve="-90"/>
+<wire x1="177.9" y1="133" x2="177.9" y2="137.7" width="0.254" layer="1"/>
+<wire x1="175.1" y1="137.7" x2="177.9" y2="137.7" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>
