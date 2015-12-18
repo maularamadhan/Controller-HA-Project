@@ -7172,7 +7172,7 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="P+13" library="SparkFun" deviceset="VCC" device=""/>
-<part name="RN1" library="resistor-net" deviceset="RN08" device=""/>
+<part name="RN1" library="resistor-net" deviceset="RN08" device="" value="10K"/>
 <part name="P+8" library="SparkFun" deviceset="VCC" device=""/>
 <part name="SHIFT3" library="74xx-eu" deviceset="74*165" device="D" technology="HC" value="74HC165D"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
@@ -7183,11 +7183,11 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <part name="SHIFT5" library="74xx-eu" deviceset="74*165" device="D" technology="HC" value="74HC165D"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="P+15" library="SparkFun" deviceset="VCC" device=""/>
-<part name="RN2" library="resistor-net" deviceset="RN08" device=""/>
+<part name="RN2" library="resistor-net" deviceset="RN08" device="" value="10K"/>
 <part name="P+34" library="SparkFun" deviceset="VCC" device=""/>
-<part name="RN4" library="resistor-net" deviceset="RN08" device=""/>
+<part name="RN4" library="resistor-net" deviceset="RN08" device="" value="10K"/>
 <part name="P+36" library="SparkFun" deviceset="VCC" device=""/>
-<part name="RN5" library="resistor-net" deviceset="RN08" device=""/>
+<part name="RN5" library="resistor-net" deviceset="RN08" device="" value="10K"/>
 <part name="P+37" library="SparkFun" deviceset="VCC" device=""/>
 <part name="SHIFTOUTA" library="74xx-eu" deviceset="74*595" device="D" technology="HC"/>
 <part name="SHIFTOUTB" library="74xx-eu" deviceset="74*595" device="D" technology="HC"/>
@@ -7237,14 +7237,14 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <part name="P+25" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+26" library="supply1" deviceset="+12V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R8" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="P+27" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+28" library="SparkFun" deviceset="VCC" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M05X2" device="SHD"/>
