@@ -27051,7 +27051,7 @@ Source: www.kingbright.com</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="C10-4U7" library="rcl" deviceset="C-EU" device="C0603" value="4.7nF"/>
+<part name="C10-4U7" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="C7-100U" library="rcl" deviceset="CPOL-EU" device="153CLV-0605" value="100uF"/>

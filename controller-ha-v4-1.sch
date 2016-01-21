@@ -24587,14 +24587,14 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="15.616" y1="13.596" x2="15.616" y2="-13.944" width="0.127" layer="21"/>
 <wire x1="15.616" y1="-13.944" x2="-15.384" y2="-13.944" width="0.127" layer="21"/>
 <wire x1="-15.384" y1="-13.944" x2="-15.384" y2="13.596" width="0.127" layer="21"/>
-<smd name="4" x="-11.804" y="-11.084" dx="2.54" dy="1.27" layer="1"/>
-<smd name="VCC" x="-11.824" y="2.866" dx="2.54" dy="1.27" layer="1"/>
-<smd name="RST" x="-11.824" y="0.326" dx="2.54" dy="1.27" layer="1"/>
-<smd name="CLK" x="-11.824" y="-2.214" dx="2.54" dy="1.27" layer="1"/>
-<smd name="8" x="12.066" y="-11.084" dx="2.54" dy="1.27" layer="1"/>
-<smd name="GND" x="12.046" y="2.866" dx="2.54" dy="1.27" layer="1"/>
-<smd name="VPP" x="12.046" y="0.326" dx="2.54" dy="1.27" layer="1"/>
-<smd name="I/O" x="12.046" y="-2.214" dx="2.54" dy="1.27" layer="1"/>
+<smd name="8" x="-11.804" y="-9.814" dx="2.54" dy="1.27" layer="1"/>
+<smd name="GND" x="-11.824" y="2.866" dx="2.54" dy="1.27" layer="1"/>
+<smd name="VPP" x="-11.824" y="0.326" dx="2.54" dy="1.27" layer="1"/>
+<smd name="I/O" x="-11.824" y="-2.214" dx="2.54" dy="1.27" layer="1"/>
+<smd name="4" x="12.066" y="-9.814" dx="2.54" dy="1.27" layer="1"/>
+<smd name="VCC" x="12.046" y="2.866" dx="2.54" dy="1.27" layer="1"/>
+<smd name="RST" x="12.046" y="0.326" dx="2.54" dy="1.27" layer="1"/>
+<smd name="CLK" x="12.046" y="-2.214" dx="2.54" dy="1.27" layer="1"/>
 <hole x="-2.924" y="10.216" drill="2.3"/>
 <hole x="-2.934" y="-5.934" drill="2.3"/>
 </package>
