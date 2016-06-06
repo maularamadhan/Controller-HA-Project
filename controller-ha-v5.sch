@@ -20051,6 +20051,11 @@ Source: www.kingbright.com</description>
 <wire x1="220.98" y1="96.52" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="91.44" x2="233.68" y2="91.44" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="ARDUINO_FOOTPRINT" gate="G$1" pin="A5"/>
+<wire x1="294.64" y1="93.98" x2="292.1" y2="93.98" width="0.1524" layer="91"/>
+<label x="292.1" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="NC" class="0">
 <segment>
